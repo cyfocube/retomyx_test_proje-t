@@ -1,0 +1,273 @@
+<!doctype html>
+<html lang="en">
+<head>
+<style id="rx-responsive-guard">
+html,body{width:100%;max-width:100%;overflow-x:hidden;}
+*,*::before,*::after{box-sizing:border-box;}
+img,video,svg,canvas,iframe{max-width:100%;}
+img,video{height:auto;}
+table,pre,code{max-width:100%;overflow-x:auto;}
+body{overflow-wrap:anywhere;}
+:where(.container,.wrapper,.wrap,.content,.inner,.section-inner,.hero,.hero-grid,.grid,.cards,.card,.row,.columns,.media,.media-frame,.form,.form-row,.actions,.cta-row){max-width:100%;min-width:0;}
+:where(.grid,.cards,.columns,.hero-grid,.row,.form-row,.actions,.cta-row)>*{min-width:0;}
+:where(a,button,input,select,textarea){max-width:100%;}
+@media (max-width: 640px){
+  body{min-width:0!important;}
+  main,section,header,footer,nav,article,aside{max-width:100%;overflow-x:clip;}
+  .flex,.grid{min-width:0;}
+  :where(.container,.wrapper,.wrap,.content,.inner,.section-inner){width:100%!important;max-width:100%!important;padding-left:min(20px,5vw);padding-right:min(20px,5vw);}
+  :where(.hero-grid,.grid,.cards,.columns,.pricing-grid,.features-grid,.gallery-grid,.testimonial-grid){grid-template-columns:1fr!important;}
+  :where(.row,.form-row,.actions,.cta-row,.button-row,.nav-actions){flex-wrap:wrap;}
+  :where(.row,.form-row,.actions,.cta-row,.button-row,.nav-actions)>*{min-width:0;max-width:100%;}
+  :where(a,button){white-space:normal;}
+  :where(input,select,textarea,button){width:auto;max-width:100%;}
+  :where(h1){font-size:clamp(2rem,11vw,3.75rem);line-height:1.02;}
+  :where(h2){font-size:clamp(1.55rem,8vw,2.6rem);line-height:1.08;}
+  :where(p,li){font-size:max(0.95rem,16px);}
+  [class*="min-w-"],[style*="min-width"]{min-width:0!important;}
+  [class*="w-["],[style*="width"]{max-width:100%!important;}
+}
+</style>
+
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>How PawNest Works — Book Trusted Pet Care</title>
+<meta name="description" content="See how PawNest connects you with vetted local pet sitters in three simple steps, plus our trust, safety, and protection guarantees.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:wght@500;600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style data-rx-file="css/styles.css">
+*,*::before,*::after{box-sizing:border-box}
+html,body{max-width:100%;overflow-x:hidden}html{scroll-behavior:smooth}
+body{margin:0;font-family:'Inter',system-ui,sans-serif;color:#1C2B36;background:#FFFFFF;line-height:1.55;-webkit-font-smoothing:antialiased}
+img{max-width:100%;height:auto;display:block}a{color:inherit;text-decoration:none}button{font-family:inherit;cursor:pointer;border:none;background:none}
+h1,h2,h3,h4{font-family:'Fraunces',Georgia,serif;font-weight:600;line-height:1.15;letter-spacing:-.01em;margin:0 0 .4em;color:#1C2B36}p{margin:0 0 1em}
+:root{--green:#00B96F;--green-dark:#009659;--coral:#FF7E5E;--dark:#1C2B36;--bg:#F8FAF7;--gray:#6B7280;--line:#E5E9E6}
+.wrap{width:100%;max-width:1180px;margin:0 auto;padding:0 18px}@media(min-width:720px){.wrap{padding:0 28px}}
+.site-header{position:sticky;top:0;z-index:50;background:rgba(255,255,255,.92);backdrop-filter:saturate(180%) blur(10px);border-bottom:1px solid var(--line)}
+.nav{display:flex;align-items:center;justify-content:space-between;padding:14px 0;gap:14px}
+.brand{display:flex;align-items:center;gap:8px;font-family:'Fraunces';font-weight:700;font-size:22px;color:var(--dark);min-width:0}
+.brand-mark{width:32px;height:32px;border-radius:10px;background:var(--green);display:grid;place-items:center;color:#fff;flex:none}
+.nav-links{display:none;gap:26px;align-items:center}.nav-links a{font-size:15px;font-weight:500;opacity:.85}.nav-links a:hover{opacity:1;color:var(--green)}
+.nav-cta{display:none;align-items:center;gap:10px}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;padding:12px 20px;border-radius:999px;font-weight:600;font-size:15px;min-height:44px;white-space:nowrap;transition:transform .15s ease, background .15s ease}
+.btn-primary{background:var(--green);color:#fff;box-shadow:0 6px 18px rgba(0,185,111,.28)}.btn-primary:hover{background:var(--green-dark)}
+.btn-ghost{background:#fff;color:var(--dark);border:1px solid var(--line)}.btn-ghost:hover{border-color:var(--dark)}
+.btn-coral{background:var(--coral);color:#fff}.btn-coral:hover{background:#ef6a4a}
+.hamburger{display:inline-flex;flex-direction:column;gap:5px;padding:10px;border-radius:10px;border:1px solid var(--line);background:#fff}
+.hamburger span{width:20px;height:2px;background:var(--dark)}
+.mobile-menu{display:none;border-top:1px solid var(--line);padding:14px 0 22px;background:#fff}.mobile-menu.open{display:block}
+.mobile-menu a{display:block;padding:12px 18px;font-weight:500;border-radius:10px}.mobile-menu a:hover{background:var(--bg)}
+.mobile-menu .btn{margin:10px 18px 0;display:flex}
+@media(min-width:1040px){.nav-links{display:flex}.nav-cta{display:inline-flex}.hamburger{display:none}}
+.site-footer{background:#142028;color:#cfd6db;padding:60px 0 28px;margin-top:80px}
+.foot-grid{display:grid;grid-template-columns:1fr;gap:36px}@media(min-width:720px){.foot-grid{grid-template-columns:1.4fr 1fr 1fr 1fr}}
+.foot-grid h4{color:#fff;font-family:'Inter';font-size:14px;text-transform:uppercase;letter-spacing:.08em;margin-bottom:14px;font-weight:600}
+.foot-grid a{display:block;padding:6px 0;font-size:15px;color:#cfd6db}.foot-grid a:hover{color:var(--green)}
+.foot-bottom{border-top:1px solid #21323d;margin-top:40px;padding-top:22px;display:flex;flex-wrap:wrap;gap:12px;justify-content:space-between;font-size:13px;color:#8da0ad}
+.foot-brand{display:flex;align-items:center;gap:10px;font-family:'Fraunces';font-size:24px;color:#fff;font-weight:700;margin-bottom:14px}
+.foot-blurb{font-size:14px;color:#9faab2;max-width:320px}
+.eyebrow{display:inline-block;background:#E6F7EF;color:var(--green-dark);font-weight:600;font-size:13px;padding:6px 12px;border-radius:999px;margin-bottom:14px}
+.section{padding:64px 0}.section-head{max-width:680px;margin:0 auto 40px;text-align:center}.section-head h2{font-size:clamp(28px,4.4vw,42px)}.section-head p{color:var(--gray);font-size:17px}
+.muted{color:var(--gray)}
+.cta-band{background:linear-gradient(135deg,#00B96F 0%,#00A05E 100%);color:#fff;border-radius:24px;padding:44px 24px;text-align:center}
+.cta-band h2{color:#fff;font-size:clamp(26px,4vw,38px)}.cta-band p{color:rgba(255,255,255,.9);max-width:540px;margin:0 auto 22px}
+.cta-row{display:flex;flex-wrap:wrap;gap:12px;justify-content:center}.cta-row .btn-ghost{background:#fff;border-color:#fff}
+</style>
+<style data-rx-file="css/subpage.css">
+.page-hero{background:linear-gradient(180deg,#F1FBF5 0%,#FFFFFF 100%);padding:60px 0 30px;text-align:center}
+.page-hero h1{font-size:clamp(34px,5.5vw,54px)}.page-hero p{font-size:18px;color:#445662;max-width:640px;margin:0 auto}
+.steps{display:grid;gap:24px;grid-template-columns:1fr}@media(min-width:720px){.steps{grid-template-columns:repeat(3,1fr)}}
+.step-big{background:#fff;border:1px solid var(--line);border-radius:22px;padding:30px;position:relative;min-width:0}
+.step-big .n{position:absolute;top:-18px;left:24px;width:48px;height:48px;background:var(--green);color:#fff;display:grid;place-items:center;border-radius:14px;font-family:'Fraunces';font-size:24px;font-weight:700;box-shadow:0 8px 22px rgba(0,185,111,.3)}
+.step-big h3{font-size:24px;margin-top:18px}.step-big ul{padding-left:20px;margin:0;color:var(--gray);font-size:15px}.step-big li{padding:4px 0}
+.row{display:grid;grid-template-columns:1fr;gap:36px;align-items:center}@media(min-width:1040px){.row{grid-template-columns:1fr 1fr;gap:60px}}
+.row.reverse{direction:rtl}.row.reverse>*{direction:ltr}
+.row img{width:100%;border-radius:22px;aspect-ratio:5/4;object-fit:cover}
+.row h2{font-size:clamp(26px,3.6vw,36px)}
+.promise{background:var(--bg);border-radius:24px;padding:44px 24px}
+.promise-grid{display:grid;grid-template-columns:1fr;gap:18px}@media(min-width:560px){.promise-grid{grid-template-columns:1fr 1fr}}@media(min-width:1040px){.promise-grid{grid-template-columns:repeat(4,1fr)}}
+.promise-card{background:#fff;border-radius:18px;padding:22px;border:1px solid var(--line);min-width:0}
+.promise-card .ico{width:44px;height:44px;background:#E6F7EF;color:var(--green-dark);border-radius:12px;display:grid;place-items:center;margin-bottom:14px}
+.promise-card h3{font-size:18px;margin-bottom:6px}.promise-card p{font-size:14px;color:var(--gray);margin:0}
+</style>
+</head>
+<body>
+
+<header class="site-header">
+  <div class="wrap nav">
+    <a href="index.html" class="brand"><span class="brand-mark"><svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><circle cx="6" cy="9" r="2.2"/><circle cx="12" cy="6" r="2.2"/><circle cx="18" cy="9" r="2.2"/><path d="M12 11c-3 0-6 3-6 6 0 2 1.6 3 3.4 3 .9 0 1.6-.3 2.6-.3s1.7.3 2.6.3c1.8 0 3.4-1 3.4-3 0-3-3-6-6-6z"/></svg></span>PawNest</a>
+    <nav class="nav-links">
+      <a href="how-it-works.html">How it works</a>
+      <a href="browse-sitters.html">Browse sitters</a>
+      <a href="services.html">Services</a>
+      <a href="for-sitters.html">For sitters</a>
+      <a href="about.html">About</a>
+      <a href="faq.html">FAQ</a>
+    </nav>
+    <div class="nav-cta">
+      <a href="browse-sitters.html" class="btn btn-ghost">Sign in</a>
+      <a href="browse-sitters.html" class="btn btn-primary">Find a sitter</a>
+    </div>
+    <button class="hamburger" aria-expanded="false" aria-controls="mmenu" aria-label="Menu"><span></span><span></span><span></span></button>
+  </div>
+  <div class="mobile-menu" id="mmenu">
+    <a href="how-it-works.html">How it works</a>
+    <a href="browse-sitters.html">Browse sitters</a>
+    <a href="services.html">Services</a>
+    <a href="for-sitters.html">For sitters</a>
+    <a href="about.html">About</a>
+    <a href="faq.html">FAQ</a>
+    <a href="browse-sitters.html" class="btn btn-primary">Find a sitter</a>
+  </div>
+</header>
+
+<section class="page-hero">
+  <div class="wrap">
+    <span class="eyebrow">How it works</span>
+    <h1>Trusted pet care, in three simple steps</h1>
+    <p>Most pet parents book within an hour of searching. Here's exactly how PawNest gets you and your pet matched with a sitter you'll both love.</p>
+  </div>
+</section>
+
+<section class="section" style="padding-top:32px">
+  <div class="wrap">
+    <div class="steps">
+      <div class="step-big">
+        <div class="n">1</div>
+        <h3>Search & shortlist</h3>
+        <ul>
+          <li>Filter by service, dates, and pet</li>
+          <li>See verified photos, reviews, and rates</li>
+          <li>Save favorites for later</li>
+        </ul>
+      </div>
+      <div class="step-big">
+        <div class="n">2</div>
+        <h3>Meet & greet (free)</h3>
+        <ul>
+          <li>Message any sitter at no cost</li>
+          <li>Schedule a 20-minute in-person meet</li>
+          <li>Trust your gut before you book</li>
+        </ul>
+      </div>
+      <div class="step-big">
+        <div class="n">3</div>
+        <h3>Book, relax, repeat</h3>
+        <ul>
+          <li>Pay securely through PawNest</li>
+          <li>Get photos and updates each visit</li>
+          <li>Rebook with one tap next time</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section" style="padding-top:0">
+  <div class="wrap">
+    <div class="row">
+      <img src="images/587a1929fc6e94f2.jpg" alt="Pet parent and sitter shaking hands while a dog looks on">
+      <div>
+        <span class="eyebrow">Why a meet & greet matters</span>
+        <h2>Your pet's comfort comes first — always</h2>
+        <p class="muted">A free 20-minute meet & greet lets your sitter learn your pet's quirks (the squeaky toy, the 4pm zoomies, the strict dinner schedule) and lets you see how they interact in person. If it's not a fit, no problem — message another sitter, no fees, no pressure.</p>
+        <a href="browse-sitters.html" class="btn btn-primary">Find sitters near me</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section" style="padding-top:0">
+  <div class="wrap">
+    <div class="row reverse">
+      <img src="images/703b1dcb7c43c0d3.jpg" alt="Phone showing photo updates of a happy dog">
+      <div>
+        <span class="eyebrow">Stay in the loop</span>
+        <h2>Photo updates, GPS walks, & messaging built in</h2>
+        <p class="muted">Every PawNest sitter sends photo updates after each visit, and walks come with a live GPS map. Message your sitter anytime through the app — no swapping phone numbers, no chasing replies.</p>
+        <a href="services.html" class="btn btn-ghost">See what's included</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="wrap">
+    <div class="promise">
+      <div class="section-head" style="margin-bottom:30px">
+        <span class="eyebrow">The PawNest Promise</span>
+        <h2>Every booking, fully protected</h2>
+        <p>We don't just list sitters. We screen them, support them, and stand behind every visit.</p>
+      </div>
+      <div class="promise-grid">
+        <div class="promise-card">
+          <div class="ico"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-12V5l-8-3-8 3v5c0 8 8 12 8 12z"/></svg></div>
+          <h3>Background checks</h3>
+          <p>Identity, criminal record, and reference checks on every active sitter.</p>
+        </div>
+        <div class="promise-card">
+          <div class="ico"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M19 14c1.5-1.4 3-3.6 3-5.5A4.5 4.5 0 0 0 12 5 4.5 4.5 0 0 0 2 8.5C2 13 12 21 12 21"/></svg></div>
+          <h3>$25K Protection</h3>
+          <p>Vet bills and property protection included on every booked stay.</p>
+        </div>
+        <div class="promise-card">
+          <div class="ico"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg></div>
+          <h3>24/7 support</h3>
+          <p>Real humans, day or night, weekends, and holidays.</p>
+        </div>
+        <div class="promise-card">
+          <div class="ico"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6L9 17l-5-5"/></svg></div>
+          <h3>Booking guarantee</h3>
+          <p>Can't find care? We'll personally help you book — or refund 100%.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="wrap">
+    <div class="cta-band">
+      <h2>Ready to find your pet's new favorite person?</h2>
+      <p>Browsing and messaging is always free. You only pay when you book.</p>
+      <div class="cta-row">
+        <a href="browse-sitters.html" class="btn btn-ghost">Browse sitters</a>
+        <a href="services.html" class="btn" style="background:#142028;color:#fff">Explore services</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer class="site-footer">
+  <div class="wrap">
+    <div class="foot-grid">
+      <div>
+        <div class="foot-brand"><span class="brand-mark"><svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><circle cx="6" cy="9" r="2.2"/><circle cx="12" cy="6" r="2.2"/><circle cx="18" cy="9" r="2.2"/><path d="M12 11c-3 0-6 3-6 6 0 2 1.6 3 3.4 3 .9 0 1.6-.3 2.6-.3s1.7.3 2.6.3c1.8 0 3.4-1 3.4-3 0-3-3-6-6-6z"/></svg></span>PawNest</div>
+        <p class="foot-blurb">Trusted local pet care in 1,400+ cities. Background-checked sitters and the PawNest Promise on every booking.</p>
+      </div>
+      <div><h4>Services</h4><a href="services.html">Boarding</a><a href="services.html">House sitting</a><a href="services.html">Dog walking</a><a href="services.html">Drop-in visits</a><a href="services.html">Doggy daycare</a></div>
+      <div><h4>Company</h4><a href="about.html">About PawNest</a><a href="how-it-works.html">How it works</a><a href="for-sitters.html">Become a sitter</a><a href="faq.html">Help center</a></div>
+      <div><h4>Stay in the loop</h4>
+        <form data-rx-newsletter style="display:flex;gap:8px;flex-wrap:wrap">
+          <input type="email" required placeholder="Your email" aria-label="Email" style="flex:1;min-width:160px;padding:11px 14px;border-radius:10px;border:1px solid #2a3a45;background:#1d2c36;color:#fff;font-family:inherit">
+          <button class="btn btn-primary" type="submit">Join</button>
+          <span data-rx-newsletter-success style="display:none;color:var(--green);font-size:13px;width:100%">Thanks — see you in your inbox!</span>
+          <span data-rx-newsletter-error style="display:none;color:#ff9c84;font-size:13px;width:100%">Something went wrong. Try again.</span>
+        </form>
+      </div>
+    </div>
+    <div class="foot-bottom"><span>© 2025 PawNest, Inc.</span><span><a href="about.html">Privacy</a> · <a href="about.html">Terms</a> · <a href="faq.html">Trust & Safety</a></span></div>
+  </div>
+</footer>
+
+<script data-rx-file="js/main.js">
+(function(){'use strict';
+  var b=document.querySelector('.hamburger'),m=document.getElementById('mmenu');
+  if(b&&m)b.addEventListener('click',function(){var o=m.classList.toggle('open');b.setAttribute('aria-expanded',o?'true':'false');});
+  var nl=document.querySelector('[data-rx-newsletter]');
+  if(nl)nl.addEventListener('submit',function(e){e.preventDefault();var s=nl.querySelector('[data-rx-newsletter-success]');if(s)s.style.display='block';nl.reset();});
+})();
+</script>
+</body>
+</html>
